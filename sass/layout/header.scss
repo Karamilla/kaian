@@ -1,0 +1,35 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(#1d2e5967, #1d2e5967),
+    url(../Images/1الواجهه.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+    background-image: linear-gradient(#1d2e5967, #1d2e5967),
+      url(../Images/1الواجهه.jpg);
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(#1d2e5967, #1d2e5967),
+      url(../Images/xxx.jpg);
+    background-size: cover;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: -2rem;
+    right: -1rem;
+  }
+  &__logo {
+    height: 15rem;
+  }
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
