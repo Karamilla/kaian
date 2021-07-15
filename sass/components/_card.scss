@@ -99,6 +99,9 @@
       &--back {
         transform: rotateY(0);
         padding: 4rem;
+        @include respond(tab-port) {
+          padding: 6rem;
+        }
       }
     }
 
