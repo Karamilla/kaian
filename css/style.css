@@ -218,7 +218,7 @@ body {
     .card {
       height: auto; }
       .card__side {
-        height: auto;
+        height: 100%;
         position: relative;
         border-radius: 3px; }
         .card__side--back {
@@ -226,7 +226,7 @@ body {
           padding: 4rem; } }
       @media only screen and (max-width: 56.25em) and (max-width: 56.25em) {
         .card__side--back {
-          padding: 6rem; } }
+          padding: 4rem; } }
   @media only screen and (max-width: 56.25em) {
       .card:hover .card__side--front {
         transform: rotateY(0); } }
