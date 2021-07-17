@@ -43,43 +43,28 @@
   }
 
   &__picture {
-    background-size: 113%;
+    @include respond(phone) {
+      background-size: 115%;
+    }
+    background-size: 105%;
     height: 40rem;
     &--1 {
       background-image: url(../Images/1.jpg);
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        background-image: url(../Images/1.jpg);
-      }
     }
     &--2 {
       background-image: url(../Images/2.jpg);
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        background-image: url(../Images/1.jpg);
-      }
     }
     &--3 {
       background-image: url(../Images/3.jpg);
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        background-image: url(../Images/1.jpg);
-      }
     }
     &--4 {
       background-image: url(../Images/4.jpg);
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        background-image: url(../Images/1.jpg);
-      }
     }
     &--5 {
       background-image: url(../Images/5.jpg);
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        background-image: url(../Images/1.jpg);
-      }
     }
     &--6 {
       background-image: url(../Images/6.jpg);
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        background-image: url(../Images/1.jpg);
-      }
     }
   }
   &__cta {
@@ -100,7 +85,11 @@
         transform: rotateY(0);
         padding: 4rem;
         @include respond(tab-port) {
-          padding: 4rem;
+          padding: 2rem;
+        }
+        @include respond(mini-phone) {
+          padding: 2rem;
+          margin-top: -6rem;
         }
       }
     }
