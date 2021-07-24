@@ -1,0 +1,37 @@
+.carousel {
+  width: 80rem;
+  margin: 10rem auto;
+  background-color: #1d2e59;
+
+  padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+
+  border-radius: 0.8rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 8.6rem;
+
+  &__img {
+    height: 20rem;
+    border-radius: 0.8rem;
+    transform: scale(1.5);
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
+  }
+  &__testimonial-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 3.2rem;
+    color: #e6fcf5;
+  }
+  &__testimonial-author {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: #c3fae8;
+  }
+  &__testimonial-job {
+    font-size: 1.2rem;
+    color: #c3fae8;
+  }
+}

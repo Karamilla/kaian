@@ -1,0 +1,32 @@
+.form {
+  text-align: right;
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    font-family: inherit;
+    border-radius: 2px;
+    background-color: rga($color_accent, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    text-align: right;
+
+    &:focus {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid $color-secondary;
+    }
+    &::-webkit-input-placeholder {
+      color: $color-primary;
+    }
+  }
+
+  &__label {
+    margin-right: 5rem;
+    margin-top: 1rem;
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+/* maroon :#a01d22 */
+/* darkBlue :#1d2e59 */
+/* white:$color_accent */
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./base/animations";
+@import "./base/typography";
+@import "./base/base";
+@import "./base/utilties";
+
+@import "./components/card";
+@import "./components/form";
+@import "./components/popup";
+@import "./components/buttons";
+@import "./components/composition";
+@import "./components/feature-box";
+@import "./components/carousel";
+
+@import "./layout/header.scss";
+@import "./layout/navigation";
+@import "./layout/grid";
+@import "./layout/footer";
+@import "./pages/home";

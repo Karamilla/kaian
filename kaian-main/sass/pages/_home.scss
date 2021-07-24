@@ -1,0 +1,78 @@
+.section-about {
+  background: $color-grey-light-1;
+  padding: 25rem 0;
+}
+
+.section-features {
+  padding: 20rem 0;
+  transform: translateY(-25rem);
+  background-image: linear-gradient(#1d2e5967, #1d2e5967),
+    url(../Images/الواجهه.jpeg);
+  background-size: cover;
+  @include respond(tab-port) {
+    transform: translateY(-30rem);
+    margin-bottom: -5rem;
+    background: $color-secondary;
+  }
+}
+
+.section-tours {
+  background: $color-grey-light-1;
+  padding: 25rem 0 15rem 0;
+  transform: translateY(-25rem);
+  @include respond(tab-port) {
+    transform: translateY(-20rem);
+  }
+}
+
+.section-book {
+  padding: 15rem 0;
+  background: $color-secondary;
+  transform: translateY(-5rem);
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-primary, 0.9) 0%,
+      rgba($color-primary, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../images/1الواجهه.jpg);
+
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(27, 7, 7, 0.2);
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-primary, 0.9) 0%,
+        rgba($color-primary, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../images/الواجهه.jpg);
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 0.9) 0%,
+        rgba($color-primary, 0.9) 100%
+      ),
+      url(../images/1الواجهه.jpg);
+  }
+  &__form {
+    width: 50%;
+    padding: 6rem;
+    @include respond(tab-land) {
+      width: 65%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      .btn--blue {
+        margin: 0 10rem;
+      }
+    }
+  }
+}

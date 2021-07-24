@@ -1,0 +1,68 @@
+.footer {
+  transform: translateY(-5rem);
+  padding: 0rem;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__logo {
+    width: 30rem;
+    height: auto;
+  }
+  &__navigation {
+    border-top: 1px solid $color-primary;
+    padding-top: 2rem;
+    display: inline-block;
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 2rem;
+  }
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-primary;
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover,
+    &:active {
+      color: $color-secondary;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.footer__copyright {
+  color: $color-primary;
+  border-top: 1px solid $color-primary;
+  padding-top: 2rem;
+  display: inline-block;
+  width: 80%;
+  float: right;
+  text-align: right;
+  font-size: 2rem;
+  @include respond(tab-port) {
+    width: 100%;
+    float: none;
+  }
+}
