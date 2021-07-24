@@ -154,3 +154,26 @@
     transform: translateY(0);
   }
 }
+
+// Pagination Buttons
+.btn {
+  &__pagination {
+    border: 1px solid $color-primary;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    &--icon {
+      stroke: $color-primary;
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+  &__pagination:hover {
+    background-color: $color-primary;
+  }
+  &__pagination:hover .btn__pagination--icon {
+    stroke: $color_accent;
+  }
+}

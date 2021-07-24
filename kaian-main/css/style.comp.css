@@ -177,38 +177,23 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
-    background-size: cover;
+    background-size: 105%;
     height: 40rem; }
+    @media only screen and (max-width: 37.5em) {
+      .card__picture {
+        background-size: 115%; } }
     .card__picture--1 {
       background-image: url(../Images/1.jpg); }
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        .card__picture--1 {
-          background-image: url(../Images/1.jpg); } }
     .card__picture--2 {
       background-image: url(../Images/2.jpg); }
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        .card__picture--2 {
-          background-image: url(../Images/1.jpg); } }
     .card__picture--3 {
       background-image: url(../Images/3.jpg); }
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        .card__picture--3 {
-          background-image: url(../Images/1.jpg); } }
     .card__picture--4 {
       background-image: url(../Images/4.jpg); }
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        .card__picture--4 {
-          background-image: url(../Images/1.jpg); } }
     .card__picture--5 {
       background-image: url(../Images/5.jpg); }
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        .card__picture--5 {
-          background-image: url(../Images/1.jpg); } }
     .card__picture--6 {
       background-image: url(../Images/6.jpg); }
-      @media (min-resolution: 192dpi) and (min-width: 37.5em) {
-        .card__picture--6 {
-          background-image: url(../Images/1.jpg); } }
   .card__cta {
     position: absolute;
     top: 25%;
@@ -218,12 +203,20 @@ body {
     .card {
       height: auto; }
       .card__side {
-        height: auto;
+        height: 100%;
         position: relative;
         border-radius: 3px; }
         .card__side--back {
           transform: rotateY(0);
-          padding: 4rem; }
+          padding: 4rem; } }
+      @media only screen and (max-width: 56.25em) and (max-width: 56.25em) {
+        .card__side--back {
+          padding: 2rem; } }
+      @media only screen and (max-width: 56.25em) and (max-width: 320px) {
+        .card__side--back {
+          padding: 2rem;
+          margin-top: -6rem; } }
+  @media only screen and (max-width: 56.25em) {
       .card:hover .card__side--front {
         transform: rotateY(0); } }
   .card__cta {
@@ -564,6 +557,77 @@ body {
     color: #1d2e59;
     text-align: center; }
 
+.carousel {
+  width: 80rem;
+  margin: 10rem auto;
+  background-color: #1d2e59;
+  padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+  border-radius: 0.8rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8.6rem; }
+  .carousel__img {
+    height: 20rem;
+    border-radius: 0.8rem;
+    transform: scale(1.5);
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25); }
+  .carousel__testimonial-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 3.2rem;
+    color: #e6fcf5; }
+  .carousel__testimonial-author {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: #c3fae8; }
+  .carousel__testimonial-job {
+    font-size: 1.2rem;
+    color: #c3fae8; }
+
+.btn__pagination {
+  border: 1px solid #a01d22;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer; }
+  .btn__pagination--icon {
+    stroke: #a01d22;
+    height: 2.4rem;
+    width: 2.4rem; }
+
+.btn__pagination:hover {
+  background-color: #a01d22; }
+
+.btn__pagination:hover .btn__pagination--icon {
+  stroke: #fff; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transform: translateX(33%); }
+
+.page-link:link,
+.page-link:visited {
+  font-size: 1.8rem;
+  color: #1d2e59;
+  text-decoration: none;
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current {
+  background-color: #1d2e59;
+  color: #fff; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(#1d2e5967, #1d2e5967), url(../Images/1الواجهه.jpg);
@@ -749,13 +813,13 @@ body {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .footer {
   transform: translateY(-5rem);

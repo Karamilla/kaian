@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transform: translateX(33%);
+  margin-bottom: 5rem;
+}
+
+.page-link:link,
+.page-link:visited {
+  font-size: 1.8rem;
+  color: $color-secondary;
+  text-decoration: none;
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current {
+  background-color: $color-secondary;
+  color: #fff;
+}
