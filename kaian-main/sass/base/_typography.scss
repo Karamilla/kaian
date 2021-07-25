@@ -82,3 +82,20 @@ p {
 .customize-pargraphs {
   transform: translateY(-20rem);
 }
+
+.heading-1 {
+}
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+}
+.heading-3 {
+  font-size: 1.8rem;
+}
+.heading-4 {
+  &--center {
+    color: $color_primary;
+    font-size: 1.7rem;
+    // letter-spacing: -0.1rem;
+  }
+}

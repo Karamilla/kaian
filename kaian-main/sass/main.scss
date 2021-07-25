@@ -19,8 +19,15 @@
 @import "./components/carousel";
 @import "./components/pagination";
 
-@import "./layout/header.scss";
+@import "./pages/home";
+@import "./layout/header";
 @import "./layout/navigation";
 @import "./layout/grid";
 @import "./layout/footer";
-@import "./pages/home";
+@import "./layout/gallery";
+@import "./layout/sidebar";
+@import "./layout/header-new";
+@import "./layout/story";
+@import "./layout/features";
+@import "./layout/homes";
+@import "./layout/relators";
